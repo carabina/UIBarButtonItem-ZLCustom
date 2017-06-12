@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
     s.name                  = "UIBarButtonItem+ZLCustom"
 
-    s.version               = "0.0.1"
+    s.version               = "0.0.2"
 
     s.summary               = "快速创建UIBarButtonItem对象"
 
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
 
     s.author                = { "Mr.Zhao" => "itzhaolei@foxmail.com" }
 
-    s.source                = { :git => "https://github.com/ZLDemo/UIBarButtonItem-ZLCustom.git", :tag => "0.0.1" }
+    s.source                = { :git => "https://github.com/ZLDemo/UIBarButtonItem-ZLCustom.git", :tag => "0.0.2" }
 
     s.framework             = "UIKit"
 

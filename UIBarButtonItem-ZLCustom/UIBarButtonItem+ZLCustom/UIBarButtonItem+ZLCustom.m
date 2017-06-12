@@ -22,7 +22,7 @@
 /**改变图片的显示颜色
  *@param color 将要显示的颜色
  */
-- (UIImage *)changeImageColorWithColor:(UIColor *)color{
+- (UIImage *)changeImageColorWithColor:(UIColor *)color {
     UIGraphicsBeginImageContextWithOptions(self.size, NO, self.scale);
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextTranslateCTM(context, 0, self.size.height);
@@ -58,15 +58,15 @@
         image = [UIImage imageNamed:imageName];
     }
     if (imageColor) {
-        [image changeImageColorWithColor:imageColor];
+        image = [image changeImageColorWithColor:imageColor];
     }
     if (image) {
         [button setImage:image forState:UIControlStateNormal];
     }
     [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
     button.contentHorizontalAlignment = alignment;
-    button.imageEdgeInsets=UIEdgeInsetsMake(0, -5, 0, 0);
-    button.titleLabel.font=[UIFont boldSystemFontOfSize:14.f];
+    button.imageEdgeInsets = UIEdgeInsetsMake(0, -5, 0, 0);
+    button.titleLabel.font = [UIFont boldSystemFontOfSize:14.f];
     if (text) {
         [button setTitle:text forState:UIControlStateNormal];
     }

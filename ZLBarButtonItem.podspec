@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 
-    s.name                  = "UIBarButtonItem+ZLCustom"
+    s.name                  = "ZLBarButtonItem"
 
     s.version               = "0.0.2"
 
